@@ -1,34 +1,34 @@
+#include <iostream>
 #include "MathBasic.h"
-
 
 namespace mbasic
 {
-	int  MathBasic::add(int v1, int v2)
+	int 
+	MathBasic::Add(int n1, int n2)
 	{
-		return (v1+v2);
+		return n1 + n2;
 	}
 
-	int MathBasic::dif(int v1, int v2)
+	int 
+	MathBasic::Dif(int n1, int n2)
 	{
-		return (v1-v2);
+		return n1 - n2;
 	}
 
-	int MathBasic::mux(int v1, int v2)
+	int 
+	MathBasic::Mux(int n1, int n2)
 	{
-		return (v1*v1);
+		return n1 * n2;
 	}
 
-	int MathBasic::div(int v1, int v2)
+	int 
+	MathBasic::Div(int n1, int n2)
 	{
-		if(v2 == 0)
+		if(n2 == 0)
 		{
+			std::cout << "0 é inválido como denominador..." << std::endl;
 			return 0;
 		}
-
-		else
-		{
-			return (v1/v2);
-		}
+		return n1 / n2;
 	}
 }
-
